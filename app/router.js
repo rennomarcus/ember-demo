@@ -7,6 +7,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('about');
+  this.route('index.my-list');
+
+  this.route('index', function() {
+    this.route('my-list');
+  });
 });
 
 export default Router;
