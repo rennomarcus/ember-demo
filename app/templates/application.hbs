@@ -1,5 +1,11 @@
+Navbar in all routes
 <nav>
-  <ul><li>Navbar in all routes</li></ul>
+  <ul>
+    <li>{{#link-to 'index'}}Index{{/link-to}}
+        <ul><li>{{#link-to 'index.my-list'}}My list{{/link-to}}</li></ul>
+    </li>
+    <li>{{#link-to 'about'}}About{{/link-to}}</li>
+  </ul>
 </nav>
 
 {{outlet}}
