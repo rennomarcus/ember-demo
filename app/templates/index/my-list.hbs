@@ -1,2 +1,4 @@
 My list<br>
-{{song-card}}
+{{#each model as |song|}}
+  {{song-card song=song}}
+{{/each}}
